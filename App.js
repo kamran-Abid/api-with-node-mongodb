@@ -46,6 +46,10 @@ const connectDB = async () => {
 //     console.log("This is a middleware for post.");
 // })
 
+app.get('/', (req, res)=>{
+    res.send('Welcom to Home page of API');
+})
+
 // connect db
 
 // Connect to the database before listening
